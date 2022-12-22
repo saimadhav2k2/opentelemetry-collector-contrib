@@ -59,6 +59,9 @@ During the collector release process, all `./.chloggen/*.yaml` files are transcr
 
 Alternately, copy `./.chloggen/TEMPLATE.yaml`, or just create your file from scratch.
 
+## Writing Platform Agnostic Code
+* The collector should work on both Windows and Linux platforms. 
+* We need to promote using libraries that provide such guarantees as `path/filepath`.
 ## Adding New Components
 
 **Before** any code is written, [open an
